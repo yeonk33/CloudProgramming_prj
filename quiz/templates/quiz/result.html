@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+<h1>result</h1>
+<br>
+
+<div class="result_content">
+    {% if score < 2 %}
+        <div class="results">
+        <div class="title"> 분발하세요.. </div>
+        <div class="score">총점: {{ score }}점</div>
+        </div>
+    {% endif %}
+
+</div>
+<br>
+<a href="/"><button id="next_btn">홈으로</button></a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz</title>
+</head>
+<body>
+<h1>quiz</h1>
+<!-- Questions -->
+<div class="main_contest">
+    {% for i in questions %}
+        <form class="question_form">
+            <div class="radio-group">
+                <div class="each-radio-img">
+                    <label class="labl-img">
+                        <input type="radio" name="name" id='option1' value="{{ i.option1 }}">
+                        <div class="options">{{ i.option1 }}</div>
+                    </label>
+                </div>
+                <br>
+                <div class="each-radio-img">
+                    <label class="labl-img">
+                        <input type="radio" name="name" id='option2' value="{{ i.option2 }}">
+                        <div class="options">{{ i.option2 }}</div>
+                    </label>
+                </div>
+                <br>
+            </div>
+        </form>
+
+        <div class="paginator">
+            {% if questions.has_next %}
+                <a href="?page={{ questions.next_page_number }}" id="save_ans"><button id="next_btn">다음문제</button></a>
+            {% else %}
+                <a href="/result/" id="save_ans"><button id="submit_btn">제출</button></a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
