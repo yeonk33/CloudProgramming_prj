@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'quiz',
     'todo',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,6 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+DATE_INPUT_FORMATS = ['%d-%m-%Y']
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

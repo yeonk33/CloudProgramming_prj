@@ -40,25 +40,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Notification.DisplayName-DoNotAsk-Download Shared Index": "Shared indexes available",
-    "Notification.DisplayName-DoNotAsk-Language Plugins Notifications": "Recommended language plugin available",
-    "Notification.DoNotAsk-Download Shared Index": "true",
-    "Notification.DoNotAsk-Language Plugins Notifications": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/cp_prj/todo",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Download Shared Index&quot;: &quot;Shared indexes available&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Language Plugins Notifications&quot;: &quot;Recommended language plugin available&quot;,
+    &quot;Notification.DoNotAsk-Download Shared Index&quot;: &quot;true&quot;,
+    &quot;Notification.DoNotAsk-Language Plugins Notifications&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/cp_prj&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\cp_prj\todo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\cp_prj\todo\templates\todo" />
+      <recent name="C:\cp_prj\todo" />
       <recent name="C:\cp_prj\todo\templates" />
       <recent name="C:\cp_prj\quiz\templates\quiz" />
     </key>
@@ -72,7 +74,9 @@
       <option name="presentableId" value="Default" />
       <updated>1654841251695</updated>
       <workItem from="1654841253569" duration="7028000" />
-      <workItem from="1655373125575" duration="9553000" />
+      <workItem from="1655373125575" duration="9968000" />
+      <workItem from="1655447220197" duration="4759000" />
+      <workItem from="1655521416198" duration="8365000" />
     </task>
     <servers />
   </component>
