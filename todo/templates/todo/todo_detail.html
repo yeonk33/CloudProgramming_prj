@@ -1,0 +1,36 @@
+{% extends 'todo/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+    <title>TODOLIST - {{ todos.todo }}</title>
+{% endblock %}
+
+{% block main_area %}
+    <div class="col-lg-8">
+        <!-- 할 일 상세정보 -->
+        <h1 class="mt-4">{{ todo.todo }}</h1>
+        <h4 class="mt-5"> {{ todo.description }}</h4>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>등록 날짜 {{ todo.created_at }}</p>
+        <p>마감 날짜 {{ todo.deadline }}</p>
+        <hr>
+
+      <a href="http://127.0.0.1:8000/list/" class="btn btn-primary">목록가기 &rarr;</a>
+      <a href="http://127.0.0.1:8000/update/{{ todo.pk }}" class="btn btn-primary">수정하기 &rarr;</a>
+
+        <hr>
+
+        <!-- Post Content -->
+        <p>{{ todo.get_content_markdown | safe }}</p>
+        {% if todo.tags.exists %}
+            <br />
+            <i class = "fas fa-tags"></i>
+            {% for tag in todo.tags.iterator %}
+                <a href = {{ tag.get_absolute_url }}> {{ tag }}</a>
+            {% endfor %}
+        {% endif %}
+        <hr>
+    </div>
+{% endblock %}

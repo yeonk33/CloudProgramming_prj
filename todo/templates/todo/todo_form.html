@@ -1,0 +1,16 @@
+{% extends 'todo/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} CREATE {% endblock %}
+
+{% block main_area %}
+    <h1>새 할 일 작성</h1>
+    <hr/>
+
+    <form method="post" enctype ="multipart/form-data">{% csrf_token %}
+        <table>
+            {{ form | crispy }}
+        </table>
+        <button type="submit" class="btn btn-primary float-right">작성완료</button>
+    </form>
+    {{ form.media }}
+{% endblock %}
